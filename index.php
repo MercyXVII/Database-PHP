@@ -6,7 +6,10 @@
   </head>
   <body>
     <?php
-
+      $servername = "localhost";
+      $databasename = "db_level2_opdr1";
+      $username = "Martijn";
+      $password = "welkom1234";
 
 
 
