@@ -2,9 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="CSS/master.css">
+    <title>Database 2</title>
   </head>
   <body>
-    <?php include 'database.php'; ?>
+    <table>
+      <tr>
+        <th> ID:</th>
+        <th> Artist: </th>
+        <th> Title: </th>
+      </tr>
+      <?php include 'database.php'; ?>
   </body>
 </html>
