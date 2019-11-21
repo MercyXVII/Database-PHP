@@ -12,6 +12,6 @@
         <th> Artist: </th>
         <th> Title: </th>
       </tr>
-      <?php include 'database.php'; ?>
+      <?php include 'PHP/database.php'; ?>
   </body>
 </html>
