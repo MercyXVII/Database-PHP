@@ -5,26 +5,22 @@
   $password = "Welkom1234";
 
   // Create connection
-  $db = new mysqli($servername, $username, $password, $databasename);
-
-  if($db->connect_errno > 0){
-    die('Unable to connect to database [' . $db->connect_error . ']');
+  $conn = new mysqli($servername, $username, $password, $databasename);
+  // Check connection
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = <<<SQL
-    SELECT *
-    FROM `users`
-    WHERE `live` = 1
-    SQL;
+  $sql = "SELECT id, artist, title FROM songs";
+  $result = $conn->query($sql);
 
-  if(!$result = $db->query($sql)){
-      die('There was an error running the query [' . $db->error . ']');
+  if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+          echo "id: " . $row["id"]. " - Name: " . $row["artist"]. " " . $row["title"]. "<br>";
+      }
+  } else {
+      echo "0 results";
   }
-
-  while($row = $result->fetch_assoc()){
-    echo $row['username'] . '<br />';
-  }
-
-
-
+  $conn->close();
 ?>
