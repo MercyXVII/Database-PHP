@@ -1,15 +1,23 @@
 <?php
-  $servername = "localhost";
-  $databasename = "db_level2_opdr1";
-  $username = "Martijn";
-  $password = "Welkom1234";
+
+    $artist = $_POST['Artist'];
+    $song = $_POST['Song'];
+
+    $sql = "INSERT INTO songs (artist, title) values ('$artist', '$song')";
 
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $databasename);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if(isset($_POST['submit']))
+    {
+      if(!mysql_query($conn, $sql)){
+        echo "Not inserted.";
+      }
+      else {
+        echo "Inserted.";
+        header("Location: index.php");
+      }
     }
 
+
+
+    $conn->close();
 ?>

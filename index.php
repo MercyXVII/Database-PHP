@@ -12,6 +12,8 @@
         <th> Artist: </th>
         <th> Title: </th>
       </tr>
+      <br>
+      <a id="button" href="addnew.php">Add a song</a>
       <?php include 'PHP/database.php'; ?>
   </body>
 </html>
