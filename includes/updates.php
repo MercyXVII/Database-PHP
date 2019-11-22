@@ -1,6 +1,6 @@
 <?php
 
-$sql=
+$sql="UPDATE songs SET artist="
 
 
 
