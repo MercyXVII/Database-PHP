@@ -6,14 +6,13 @@
     <title>Database 2</title>
   </head>
   <body>
+    <?php require_once("PHP/connection.php");?>
     <table>
       <tr>
-        <th> ID:</th>
         <th> Artist: </th>
         <th> Title: </th>
       </tr>
-      <br>
-      <a id="button" href="addnew.php">Add a song</a>
-      <?php include 'PHP/database.php'; ?>
+     <?php include('PHP/database.php'); ?>
+    <a id="button" href="addnew.php">Add a song</a>
   </body>
 </html>

@@ -5,11 +5,21 @@
     <title>insert</title>
   </head>
   <body>
-     <form action="addnew.php" method="post">
-        Artist: <input type="text" name="Artist"><br>
-        Song: <input type="text" name="Song">
+
+
+<?php
+require_once("PHP/connection.php");
+  if(isset($_POST['submit'])){
+      $sql = "INSERT INTO songs (artist, title)
+      VALUES ('".$_POST["Artist"]."','".$_POST["Song"]."')";
+    }
+  $conn->close();
+ ?>
+
+     <form method="post">
+        Artist: <input type="text" name="artist"><br>
+        Song: <input type="text" name="song">
         <input type="submit" value="Add new song">
-        <?php include 'PHP/insert.php'; ?>
     </form>
   </body>
 </html>
