@@ -1,6 +1,5 @@
 <?php
 
-
   $sql = "SELECT artist, title FROM songs";
   $result = $conn->query($sql);
 
