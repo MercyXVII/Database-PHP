@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Favoriete songs</title>
-
+    <link rel="stylesheet" href="CSS/master.css">
     <?php require_once("includes/config.php") ?>
 
   </head>
@@ -11,7 +11,7 @@
 
     <?php require("includes/table.php") ?>
 
-    <a href="addnew.php">Add a song</a>
+    <a id="button" href="addnew.php">Add a song</a>
 
   </body>
 </html>
