@@ -10,7 +10,7 @@
   <body>
 
     <?php require("includes/table.php") ?>
-
+    <br>
     <a id="button" href="addnew.php">Add a song</a>
 
   </body>
