@@ -12,6 +12,7 @@
     <?php require("includes/table.php") ?>
 
     <br>
-    <a href="addnew.php" id="button">Add a song</a
+    <a href="addnew.php" id="button">Add a song</a>
+
   </body>
 </html>
