@@ -10,9 +10,7 @@
   <body>
 
     <?php require("includes/table.php") ?>
-      <td> <a href="includes/updates.php" id="<?php echo $row["id"]; ?>">Edit</a> </td>
-      </tr>
-      </table>
+
     <br>
     <a href="addnew.php" id="button">Add a song</a
   </body>
