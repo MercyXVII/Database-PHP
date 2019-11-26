@@ -5,13 +5,13 @@
 
   if ($result->num_rows > 0)
   {
-    echo "<table><tr><th>Artist</th><th>Title</th></tr>";
+    echo "<table><tr><th>Artist</th><th>Title</th><th>Edit</th></tr>";
     // outputs van elke row
     while ($row = $result->fetch_assoc())
     {
-      echo "<tr><td>".$row["artist"]."</td><td>".$row["title"]."</td></tr>";
+      echo "<tr><td>".$row["artist"]."</td><td>".$row["title"]."</td>";
     }
-    echo "</table>";
+
   } else {
     echo "0 results";
   }
