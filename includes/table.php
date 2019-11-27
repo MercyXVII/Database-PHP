@@ -18,15 +18,14 @@
       echo '<td>'. $row['artist'] .'</td>';
       echo '<td>'. $row['title'] .'</td>';
       echo '<td> <a href="update.php?id='.$row['id'].'">Edit</a></td>';
-      echo '<td> <a href="?id='.$row['id'].'">Delete</a></td>';
+      echo '<td> <a href="delete.php?id='.$row['id'].'">Delete</a></td>';
       echo "</tr>";
     }
     echo "</table>";
   } else {
     echo "0 results";
   }
-
-
+  
 
   $conn->close();
 ?>

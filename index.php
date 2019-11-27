@@ -9,7 +9,11 @@
   </head>
   <body>
 
-    <?php require("includes/table.php") ?>
+    <?php
+
+      require("includes/table.php");
+
+    ?>
 
     <br>
     <a href="addnew.php" id="button">Add a song</a>
