@@ -1,7 +1,6 @@
 <?php
   $sql = "SELECT * FROM songs";
   $result = $conn->query($sql);
-
   if ($result->num_rows > 0)
   {
     echo "<table>
@@ -25,7 +24,6 @@
   } else {
     echo "0 results";
   }
-  
 
   $conn->close();
-?>
+  ?>
